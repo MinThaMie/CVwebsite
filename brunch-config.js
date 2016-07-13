@@ -23,12 +23,13 @@ module.exports = {
             precision: 8,
             options: {
                 includePaths: [
-                    'bower_components/bootstrap-sass/assets/stylesheets'
+                    'bower_components/bootstrap-sass/assets/stylesheets',
+                    'node_modules/font-awesome/scss'
                 ]
             }
         },
         copycat: {
-            "fonts": [],
+            "fonts": ["node_modules/font-awesome/fonts"],
             "images": ["app/images"],
             verbose: true,
             onlyChanged: true

@@ -1,0 +1,13 @@
+{
+  "name": "cvwebsite",
+  "version": "1.0.0",
+  "authors": [
+    "Anne-Greeth van Herwijnen"
+  ],
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^3.1.0"
+  }
+}

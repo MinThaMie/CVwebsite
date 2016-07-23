@@ -1,8 +1,19 @@
 (function($){
     document.addEventListener('DOMContentLoaded', () => {
-        $(".circle").click(function(evt) {
+        $(".clickable").click(function(evt) {
             var elem = $(this);
-            elem.toggleClass('fullSize');
+            if (!elem.hasClass('fullSize')){
+                elem.addClass('fullSize');
+                $(".mask").addClass('open');
+            }
         });
+        $(".mask").click(function(evt) {
+            var elem = $(this);
+            if (elem.hasClass("open")){
+                elem.removeClass('open');
+                $(".clickable.fullSize").removeClass('fullSize');
+            }
+        });
+
     });
 })(window.jQuery);
